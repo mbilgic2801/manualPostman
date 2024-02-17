@@ -7,7 +7,7 @@ Feature: Delete booking
     And I have a booking <ID> to delete
     When I send a DELETE request to remove the booking
     Then the booking should be successfully deleted
-    And the response should have a status code of 201
+    And the response should have a <status_code>
     Examples:
       | ID   | status_code |
       | 3836 | 201         |
